@@ -320,3 +320,32 @@ node_modules
 git add .
 git commit -m "Initial commit - midterm backend"
 
+# go to GitHub and create new repository midterm-backend; get link from GitHub
+https://github.com/alfredpcleung/midterm-backend.git
+
+# type following in terminal inside project folder
+git remote add origin https://github.com/<your-username>/midterm-backend.git
+git branch -M main
+git push -u origin main
+
+# check GitHub, should be uploaded. If make changes:
+git add .
+git commit -m "Describe your change"
+git push
+
+# go to render (not vercel): new web service > import from Git
+# language: node
+# build command
+npm install
+# start command
+npm start
+# environmental variables
+MONGO_URI: mongodb+srv://alfredpcleung_db_user:PKLcbeqt3Vl3VBES@cluster0.cr03ajv.mongodb.net/Portfolio?retryWrites=true&w=majority&appName=Cluster0
+PORT: 4000
+
+# To test in browser
+Go to the link: /api/projects
+To test, use thunder client to post, then use id
+../api/projects/<id>
+
+

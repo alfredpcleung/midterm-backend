@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
 
 // register entity routes
 app.use('/api/projects', require('./routes/projects.routes'));
+app.use('/api/contacts', require('./routes/contacts.routes'));
 
 // error handler (must be last middleware)
 app.use(errorHandler);
